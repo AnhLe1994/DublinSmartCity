@@ -1,87 +1,156 @@
 syntax = "proto3";
 
+package com.londonsmartcity.environment;
+
 option java_multiple_files = true;
 option java_package = "com.londonsmartcity.environment";
 option java_outer_classname = "EnvironmentServiceProto";
 
-package environment;
-
-// Environmental Monitoring Service
+// Environment Service
 service EnvironmentService {
-  // Get current environmental readings for a location
-  rpc GetEnvironmentalData (EnvironmentalDataRequest) returns (EnvironmentalDataResponse) {}
+  // Get current air quality data
+  rpc GetAirQuality (AirQualityRequest) returns (AirQualityResponse) {}
   
+  // Get noise level data
+  rpc GetNoiseLevel (NoiseLevelRequest) returns (NoiseLevelResponse) {}
+  
+  // Get weather data
+  rpc GetWeather (WeatherRequest) returns (WeatherResponse) {}
+  
+  // Stream real-time environmental data
+  rpc StreamEnvironmentalData (EnvironmentalDataRequest) returns (stream EnvironmentalData) {}
+
   // Report air quality alert
   rpc ReportAirQualityAlert (AirQualityAlert) returns (AlertResponse) {}
-  
+
   // Get historical environmental data
   rpc GetHistoricalData (HistoricalDataRequest) returns (HistoricalDataResponse) {}
-  
-  // Stream real-time environmental updates
-  rpc StreamEnvironmentalUpdates (EnvironmentalUpdateRequest) returns (stream EnvironmentalUpdate) {}
+}
+
+message AirQualityRequest {
+  string location_id = 1;
+}
+
+message AirQualityResponse {
+  string location_id = 1;
+  double pm25 = 2;
+  double pm10 = 3;
+  double no2 = 4;
+  double o3 = 5;
+  string air_quality_index = 6;
+  int64 timestamp = 7;
+}
+
+message NoiseLevelRequest {
+  string location_id = 1;
+}
+
+message NoiseLevelResponse {
+  string location_id = 1;
+  double decibels = 2;
+  string noise_level = 3;
+  int64 timestamp = 4;
+}
+
+message WeatherRequest {
+  string location_id = 1;
+}
+
+message WeatherResponse {
+  string location_id = 1;
+  double temperature = 2;
+  double humidity = 3;
+  double wind_speed = 4;
+  string weather_condition = 5;
+  int64 timestamp = 6;
 }
 
 message EnvironmentalDataRequest {
   string location_id = 1;
-  double latitude = 2;
-  double longitude = 3;
 }
 
-message EnvironmentalDataResponse {
+message EnvironmentalData {
   string location_id = 1;
-  double temperature = 2;      // in Celsius
-  double humidity = 3;         // percentage
-  double air_quality_index = 4; // AQI value
-  double noise_level = 5;      // in dB
-  double co2_level = 6;        // in ppm
-  string timestamp = 7;
+  double pm25 = 2;
+  double pm10 = 3;
+  double no2 = 4;
+  double o3 = 5;
+  double decibels = 6;
+  double temperature = 7;
+  double humidity = 8;
+  double wind_speed = 9;
+  string weather_condition = 10;
+  int64 timestamp = 11;
 }
 
 message AirQualityAlert {
   string location_id = 1;
-  string alert_type = 2;       // "HIGH_POLLUTION", "SMOG", "DUST"
-  string severity = 3;         // "LOW", "MODERATE", "HIGH"
-  string description = 4;
-  double latitude = 5;
-  double longitude = 6;
+  string description = 2;
+  string severity = 3;
 }
 
 message AlertResponse {
   bool success = 1;
   string message = 2;
-  string alert_id = 3;
 }
 
 message HistoricalDataRequest {
   string location_id = 1;
-  string start_time = 2;
-  string end_time = 3;
-  string metric = 4;          // "TEMPERATURE", "HUMIDITY", "AIR_QUALITY", "NOISE", "CO2"
+  int64 start_time = 2;
+  int64 end_time = 3;
 }
 
 message HistoricalDataResponse {
   string location_id = 1;
-  string metric = 2;
-  repeated DataPoint data_points = 3;
+  repeated DataPoint data_points = 2;
 }
 
 message DataPoint {
-  string timestamp = 1;
-  double value = 2;
+  int64 timestamp = 1;
+  double pm25 = 2;
+  double pm10 = 3;
+  double no2 = 4;
+  double o3 = 5;
+  double decibels = 6;
+  double temperature = 7;
+  double humidity = 8;
+  double wind_speed = 9;
+  string weather_condition = 10;
+}
+
+// Remove unused messages
+message EnvironmentalUpdate {
+  string location_id = 1;
+  double pm25 = 2;
+  double pm10 = 3;
+  double no2 = 4;
+  double o3 = 5;
+  double decibels = 6;
+  double temperature = 7;
+  double humidity = 8;
+  double wind_speed = 9;
+  string weather_condition = 10;
+  int64 timestamp = 11;
+}
+
+message StreamRequest {
+  string location_id = 1;
+}
+
+message EnvironmentalDataResponse {
+  string location_id = 1;
+  double pm25 = 2;
+  double pm10 = 3;
+  double no2 = 4;
+  double o3 = 5;
+  double decibels = 6;
+  double temperature = 7;
+  double humidity = 8;
+  double wind_speed = 9;
+  string weather_condition = 10;
+  int64 timestamp = 11;
 }
 
 message EnvironmentalUpdateRequest {
   string location_id = 1;
-  bool subscribe = 2;
-}
-
-message EnvironmentalUpdate {
-  string location_id = 1;
-  double temperature = 2;
-  double humidity = 3;
-  double air_quality_index = 4;
-  double noise_level = 5;
-  double co2_level = 6;
-  string timestamp = 7;
-  repeated string active_alerts = 8;
 } 

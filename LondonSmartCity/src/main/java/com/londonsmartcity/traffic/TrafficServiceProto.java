@@ -15,45 +15,45 @@ public final class TrafficServiceProto {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_traffic_TrafficStatusRequest_descriptor;
+    internal_static_com_londonsmartcity_traffic_TrafficStatusRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_traffic_TrafficStatusRequest_fieldAccessorTable;
+      internal_static_com_londonsmartcity_traffic_TrafficStatusRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_traffic_TrafficStatusResponse_descriptor;
+    internal_static_com_londonsmartcity_traffic_TrafficStatusResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_traffic_TrafficStatusResponse_fieldAccessorTable;
+      internal_static_com_londonsmartcity_traffic_TrafficStatusResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_traffic_SignalTimingRequest_descriptor;
+    internal_static_com_londonsmartcity_traffic_SignalTimingRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_traffic_SignalTimingRequest_fieldAccessorTable;
+      internal_static_com_londonsmartcity_traffic_SignalTimingRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_traffic_SignalTimingResponse_descriptor;
+    internal_static_com_londonsmartcity_traffic_SignalTimingResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_traffic_SignalTimingResponse_fieldAccessorTable;
+      internal_static_com_londonsmartcity_traffic_SignalTimingResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_traffic_IncidentReport_descriptor;
+    internal_static_com_londonsmartcity_traffic_IncidentReport_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_traffic_IncidentReport_fieldAccessorTable;
+      internal_static_com_londonsmartcity_traffic_IncidentReport_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_traffic_IncidentResponse_descriptor;
+    internal_static_com_londonsmartcity_traffic_IncidentResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_traffic_IncidentResponse_fieldAccessorTable;
+      internal_static_com_londonsmartcity_traffic_IncidentResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_traffic_TrafficUpdateRequest_descriptor;
+    internal_static_com_londonsmartcity_traffic_TrafficUpdate_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_traffic_TrafficUpdateRequest_fieldAccessorTable;
+      internal_static_com_londonsmartcity_traffic_TrafficUpdate_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_traffic_TrafficUpdate_descriptor;
+    internal_static_com_londonsmartcity_traffic_TrafficUpdateRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_traffic_TrafficUpdate_fieldAccessorTable;
+      internal_static_com_londonsmartcity_traffic_TrafficUpdateRequest_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -63,92 +63,91 @@ public final class TrafficServiceProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025traffic_service.proto\022\007traffic\"P\n\024Traf" +
-      "ficStatusRequest\022\023\n\013location_id\030\001 \001(\t\022\020\n" +
-      "\010latitude\030\002 \001(\001\022\021\n\tlongitude\030\003 \001(\001\"\207\001\n\025T" +
-      "rafficStatusResponse\022\023\n\013location_id\030\001 \001(" +
-      "\t\022\030\n\020congestion_level\030\002 \001(\005\022\025\n\raverage_s" +
-      "peed\030\003 \001(\005\022\016\n\006status\030\004 \001(\t\022\030\n\020active_inc" +
-      "idents\030\005 \003(\t\"u\n\023SignalTimingRequest\022\027\n\017i" +
-      "ntersection_id\030\001 \001(\t\022\026\n\016green_duration\030\002" +
-      " \001(\005\022\027\n\017yellow_duration\030\003 \001(\005\022\024\n\014red_dur" +
-      "ation\030\004 \001(\005\"P\n\024SignalTimingResponse\022\017\n\007s" +
-      "uccess\030\001 \001(\010\022\017\n\007message\030\002 \001(\t\022\026\n\016updated" +
-      "_timing\030\003 \001(\t\"\203\001\n\016IncidentReport\022\023\n\013inci" +
-      "dent_id\030\001 \001(\t\022\020\n\010location\030\002 \001(\t\022\023\n\013descr" +
-      "iption\030\003 \001(\t\022\020\n\010severity\030\004 \001(\t\022\020\n\010latitu" +
-      "de\030\005 \001(\001\022\021\n\tlongitude\030\006 \001(\001\"I\n\020IncidentR" +
-      "esponse\022\017\n\007success\030\001 \001(\010\022\017\n\007message\030\002 \001(" +
-      "\t\022\023\n\013incident_id\030\003 \001(\t\">\n\024TrafficUpdateR" +
-      "equest\022\023\n\013location_id\030\001 \001(\t\022\021\n\tsubscribe" +
-      "\030\002 \001(\010\"\222\001\n\rTrafficUpdate\022\023\n\013location_id\030" +
-      "\001 \001(\t\022\030\n\020congestion_level\030\002 \001(\005\022\025\n\ravera" +
-      "ge_speed\030\003 \001(\005\022\016\n\006status\030\004 \001(\t\022\030\n\020active" +
-      "_incidents\030\005 \003(\t\022\021\n\ttimestamp\030\006 \001(\t2\325\002\n\016" +
-      "TrafficService\022S\n\020GetTrafficStatus\022\035.tra" +
-      "ffic.TrafficStatusRequest\032\036.traffic.Traf" +
-      "ficStatusResponse\"\000\022S\n\022UpdateSignalTimin" +
-      "g\022\034.traffic.SignalTimingRequest\032\035.traffi" +
-      "c.SignalTimingResponse\"\000\022F\n\016ReportIncide" +
-      "nt\022\027.traffic.IncidentReport\032\031.traffic.In" +
-      "cidentResponse\"\000\022Q\n\024StreamTrafficUpdates" +
-      "\022\035.traffic.TrafficUpdateRequest\032\026.traffi" +
-      "c.TrafficUpdate\"\0000\001B4\n\033com.londonsmartci" +
-      "ty.trafficB\023TrafficServiceProtoP\001b\006proto" +
-      "3"
+      "\n\025traffic_service.proto\022\033com.londonsmart" +
+      "city.traffic\"(\n\024TrafficStatusRequest\022\020\n\010" +
+      "location\030\001 \001(\t\"}\n\025TrafficStatusResponse\022" +
+      "\020\n\010location\030\001 \001(\t\022\030\n\020congestion_level\030\002 " +
+      "\001(\005\022\025\n\raverage_speed\030\003 \001(\005\022\016\n\006status\030\004 \001" +
+      "(\t\022\021\n\ttimestamp\030\005 \001(\003\"n\n\023SignalTimingReq" +
+      "uest\022\020\n\010location\030\001 \001(\t\022\026\n\016green_duration" +
+      "\030\002 \001(\005\022\027\n\017yellow_duration\030\003 \001(\005\022\024\n\014red_d" +
+      "uration\030\004 \001(\005\"8\n\024SignalTimingResponse\022\017\n" +
+      "\007success\030\001 \001(\010\022\017\n\007message\030\002 \001(\t\"I\n\016Incid" +
+      "entReport\022\020\n\010location\030\001 \001(\t\022\023\n\013descripti" +
+      "on\030\002 \001(\t\022\020\n\010severity\030\003 \001(\t\"4\n\020IncidentRe" +
+      "sponse\022\017\n\007success\030\001 \001(\010\022\017\n\007message\030\002 \001(\t" +
+      "\"u\n\rTrafficUpdate\022\020\n\010location\030\001 \001(\t\022\030\n\020c" +
+      "ongestion_level\030\002 \001(\005\022\025\n\raverage_speed\030\003" +
+      " \001(\005\022\016\n\006status\030\004 \001(\t\022\021\n\ttimestamp\030\005 \001(\003\"" +
+      "A\n\024TrafficUpdateRequest\022\020\n\010location\030\001 \001(" +
+      "\t\022\027\n\017update_interval\030\002 \001(\0052\365\003\n\016TrafficSe" +
+      "rvice\022{\n\020GetTrafficStatus\0221.com.londonsm" +
+      "artcity.traffic.TrafficStatusRequest\0322.c" +
+      "om.londonsmartcity.traffic.TrafficStatus" +
+      "Response\"\000\022{\n\022UpdateSignalTiming\0220.com.l" +
+      "ondonsmartcity.traffic.SignalTimingReque" +
+      "st\0321.com.londonsmartcity.traffic.SignalT" +
+      "imingResponse\"\000\022n\n\016ReportIncident\022+.com." +
+      "londonsmartcity.traffic.IncidentReport\032-" +
+      ".com.londonsmartcity.traffic.IncidentRes" +
+      "ponse\"\000\022y\n\024StreamTrafficUpdates\0221.com.lo" +
+      "ndonsmartcity.traffic.TrafficUpdateReque" +
+      "st\032*.com.londonsmartcity.traffic.Traffic" +
+      "Update\"\0000\001B4\n\033com.londonsmartcity.traffi" +
+      "cB\023TrafficServiceProtoP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_traffic_TrafficStatusRequest_descriptor =
+    internal_static_com_londonsmartcity_traffic_TrafficStatusRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_traffic_TrafficStatusRequest_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_traffic_TrafficStatusRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_traffic_TrafficStatusRequest_descriptor,
-        new java.lang.String[] { "LocationId", "Latitude", "Longitude", });
-    internal_static_traffic_TrafficStatusResponse_descriptor =
+        internal_static_com_londonsmartcity_traffic_TrafficStatusRequest_descriptor,
+        new java.lang.String[] { "Location", });
+    internal_static_com_londonsmartcity_traffic_TrafficStatusResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_traffic_TrafficStatusResponse_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_traffic_TrafficStatusResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_traffic_TrafficStatusResponse_descriptor,
-        new java.lang.String[] { "LocationId", "CongestionLevel", "AverageSpeed", "Status", "ActiveIncidents", });
-    internal_static_traffic_SignalTimingRequest_descriptor =
+        internal_static_com_londonsmartcity_traffic_TrafficStatusResponse_descriptor,
+        new java.lang.String[] { "Location", "CongestionLevel", "AverageSpeed", "Status", "Timestamp", });
+    internal_static_com_londonsmartcity_traffic_SignalTimingRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_traffic_SignalTimingRequest_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_traffic_SignalTimingRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_traffic_SignalTimingRequest_descriptor,
-        new java.lang.String[] { "IntersectionId", "GreenDuration", "YellowDuration", "RedDuration", });
-    internal_static_traffic_SignalTimingResponse_descriptor =
+        internal_static_com_londonsmartcity_traffic_SignalTimingRequest_descriptor,
+        new java.lang.String[] { "Location", "GreenDuration", "YellowDuration", "RedDuration", });
+    internal_static_com_londonsmartcity_traffic_SignalTimingResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_traffic_SignalTimingResponse_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_traffic_SignalTimingResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_traffic_SignalTimingResponse_descriptor,
-        new java.lang.String[] { "Success", "Message", "UpdatedTiming", });
-    internal_static_traffic_IncidentReport_descriptor =
+        internal_static_com_londonsmartcity_traffic_SignalTimingResponse_descriptor,
+        new java.lang.String[] { "Success", "Message", });
+    internal_static_com_londonsmartcity_traffic_IncidentReport_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_traffic_IncidentReport_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_traffic_IncidentReport_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_traffic_IncidentReport_descriptor,
-        new java.lang.String[] { "IncidentId", "Location", "Description", "Severity", "Latitude", "Longitude", });
-    internal_static_traffic_IncidentResponse_descriptor =
+        internal_static_com_londonsmartcity_traffic_IncidentReport_descriptor,
+        new java.lang.String[] { "Location", "Description", "Severity", });
+    internal_static_com_londonsmartcity_traffic_IncidentResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_traffic_IncidentResponse_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_traffic_IncidentResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_traffic_IncidentResponse_descriptor,
-        new java.lang.String[] { "Success", "Message", "IncidentId", });
-    internal_static_traffic_TrafficUpdateRequest_descriptor =
+        internal_static_com_londonsmartcity_traffic_IncidentResponse_descriptor,
+        new java.lang.String[] { "Success", "Message", });
+    internal_static_com_londonsmartcity_traffic_TrafficUpdate_descriptor =
       getDescriptor().getMessageTypes().get(6);
-    internal_static_traffic_TrafficUpdateRequest_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_traffic_TrafficUpdate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_traffic_TrafficUpdateRequest_descriptor,
-        new java.lang.String[] { "LocationId", "Subscribe", });
-    internal_static_traffic_TrafficUpdate_descriptor =
+        internal_static_com_londonsmartcity_traffic_TrafficUpdate_descriptor,
+        new java.lang.String[] { "Location", "CongestionLevel", "AverageSpeed", "Status", "Timestamp", });
+    internal_static_com_londonsmartcity_traffic_TrafficUpdateRequest_descriptor =
       getDescriptor().getMessageTypes().get(7);
-    internal_static_traffic_TrafficUpdate_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_traffic_TrafficUpdateRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_traffic_TrafficUpdate_descriptor,
-        new java.lang.String[] { "LocationId", "CongestionLevel", "AverageSpeed", "Status", "ActiveIncidents", "Timestamp", });
+        internal_static_com_londonsmartcity_traffic_TrafficUpdateRequest_descriptor,
+        new java.lang.String[] { "Location", "UpdateInterval", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

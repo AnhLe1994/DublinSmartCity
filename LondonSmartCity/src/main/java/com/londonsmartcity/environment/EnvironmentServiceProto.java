@@ -15,50 +15,90 @@ public final class EnvironmentServiceProto {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_environment_EnvironmentalDataRequest_descriptor;
+    internal_static_com_londonsmartcity_environment_AirQualityRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_environment_EnvironmentalDataRequest_fieldAccessorTable;
+      internal_static_com_londonsmartcity_environment_AirQualityRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_environment_EnvironmentalDataResponse_descriptor;
+    internal_static_com_londonsmartcity_environment_AirQualityResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_environment_EnvironmentalDataResponse_fieldAccessorTable;
+      internal_static_com_londonsmartcity_environment_AirQualityResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_environment_AirQualityAlert_descriptor;
+    internal_static_com_londonsmartcity_environment_NoiseLevelRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_environment_AirQualityAlert_fieldAccessorTable;
+      internal_static_com_londonsmartcity_environment_NoiseLevelRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_environment_AlertResponse_descriptor;
+    internal_static_com_londonsmartcity_environment_NoiseLevelResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_environment_AlertResponse_fieldAccessorTable;
+      internal_static_com_londonsmartcity_environment_NoiseLevelResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_environment_HistoricalDataRequest_descriptor;
+    internal_static_com_londonsmartcity_environment_WeatherRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_environment_HistoricalDataRequest_fieldAccessorTable;
+      internal_static_com_londonsmartcity_environment_WeatherRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_environment_HistoricalDataResponse_descriptor;
+    internal_static_com_londonsmartcity_environment_WeatherResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_environment_HistoricalDataResponse_fieldAccessorTable;
+      internal_static_com_londonsmartcity_environment_WeatherResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_environment_DataPoint_descriptor;
+    internal_static_com_londonsmartcity_environment_EnvironmentalDataRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_environment_DataPoint_fieldAccessorTable;
+      internal_static_com_londonsmartcity_environment_EnvironmentalDataRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_environment_EnvironmentalUpdateRequest_descriptor;
+    internal_static_com_londonsmartcity_environment_EnvironmentalData_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_environment_EnvironmentalUpdateRequest_fieldAccessorTable;
+      internal_static_com_londonsmartcity_environment_EnvironmentalData_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_environment_EnvironmentalUpdate_descriptor;
+    internal_static_com_londonsmartcity_environment_AirQualityAlert_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_environment_EnvironmentalUpdate_fieldAccessorTable;
+      internal_static_com_londonsmartcity_environment_AirQualityAlert_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_londonsmartcity_environment_AlertResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_londonsmartcity_environment_AlertResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_londonsmartcity_environment_HistoricalDataRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_londonsmartcity_environment_HistoricalDataRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_londonsmartcity_environment_HistoricalDataResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_londonsmartcity_environment_HistoricalDataResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_londonsmartcity_environment_DataPoint_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_londonsmartcity_environment_DataPoint_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_londonsmartcity_environment_EnvironmentalUpdate_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_londonsmartcity_environment_EnvironmentalUpdate_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_londonsmartcity_environment_StreamRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_londonsmartcity_environment_StreamRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_londonsmartcity_environment_EnvironmentalDataResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_londonsmartcity_environment_EnvironmentalDataResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_londonsmartcity_environment_EnvironmentalUpdateRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_londonsmartcity_environment_EnvironmentalUpdateRequest_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -68,103 +108,182 @@ public final class EnvironmentServiceProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031environment_service.proto\022\013environment" +
-      "\"T\n\030EnvironmentalDataRequest\022\023\n\013location" +
-      "_id\030\001 \001(\t\022\020\n\010latitude\030\002 \001(\001\022\021\n\tlongitude" +
-      "\030\003 \001(\001\"\255\001\n\031EnvironmentalDataResponse\022\023\n\013" +
-      "location_id\030\001 \001(\t\022\023\n\013temperature\030\002 \001(\001\022\020" +
-      "\n\010humidity\030\003 \001(\001\022\031\n\021air_quality_index\030\004 " +
-      "\001(\001\022\023\n\013noise_level\030\005 \001(\001\022\021\n\tco2_level\030\006 " +
-      "\001(\001\022\021\n\ttimestamp\030\007 \001(\t\"\206\001\n\017AirQualityAle" +
-      "rt\022\023\n\013location_id\030\001 \001(\t\022\022\n\nalert_type\030\002 " +
-      "\001(\t\022\020\n\010severity\030\003 \001(\t\022\023\n\013description\030\004 \001" +
-      "(\t\022\020\n\010latitude\030\005 \001(\001\022\021\n\tlongitude\030\006 \001(\001\"" +
-      "C\n\rAlertResponse\022\017\n\007success\030\001 \001(\010\022\017\n\007mes" +
-      "sage\030\002 \001(\t\022\020\n\010alert_id\030\003 \001(\t\"b\n\025Historic" +
-      "alDataRequest\022\023\n\013location_id\030\001 \001(\t\022\022\n\nst" +
-      "art_time\030\002 \001(\t\022\020\n\010end_time\030\003 \001(\t\022\016\n\006metr" +
-      "ic\030\004 \001(\t\"j\n\026HistoricalDataResponse\022\023\n\013lo" +
-      "cation_id\030\001 \001(\t\022\016\n\006metric\030\002 \001(\t\022+\n\013data_" +
-      "points\030\003 \003(\0132\026.environment.DataPoint\"-\n\t" +
-      "DataPoint\022\021\n\ttimestamp\030\001 \001(\t\022\r\n\005value\030\002 " +
-      "\001(\001\"D\n\032EnvironmentalUpdateRequest\022\023\n\013loc" +
-      "ation_id\030\001 \001(\t\022\021\n\tsubscribe\030\002 \001(\010\"\276\001\n\023En" +
-      "vironmentalUpdate\022\023\n\013location_id\030\001 \001(\t\022\023" +
-      "\n\013temperature\030\002 \001(\001\022\020\n\010humidity\030\003 \001(\001\022\031\n" +
-      "\021air_quality_index\030\004 \001(\001\022\023\n\013noise_level\030" +
-      "\005 \001(\001\022\021\n\tco2_level\030\006 \001(\001\022\021\n\ttimestamp\030\007 " +
-      "\001(\t\022\025\n\ractive_alerts\030\010 \003(\t2\237\003\n\022Environme" +
-      "ntService\022g\n\024GetEnvironmentalData\022%.envi" +
-      "ronment.EnvironmentalDataRequest\032&.envir" +
-      "onment.EnvironmentalDataResponse\"\000\022S\n\025Re" +
-      "portAirQualityAlert\022\034.environment.AirQua" +
-      "lityAlert\032\032.environment.AlertResponse\"\000\022" +
-      "^\n\021GetHistoricalData\022\".environment.Histo" +
-      "ricalDataRequest\032#.environment.Historica" +
-      "lDataResponse\"\000\022k\n\032StreamEnvironmentalUp" +
-      "dates\022\'.environment.EnvironmentalUpdateR" +
-      "equest\032 .environment.EnvironmentalUpdate" +
-      "\"\0000\001B<\n\037com.londonsmartcity.environmentB" +
-      "\027EnvironmentServiceProtoP\001b\006proto3"
+      "\n\031environment_service.proto\022\037com.londons" +
+      "martcity.environment\"(\n\021AirQualityReques" +
+      "t\022\023\n\013location_id\030\001 \001(\t\"\214\001\n\022AirQualityRes" +
+      "ponse\022\023\n\013location_id\030\001 \001(\t\022\014\n\004pm25\030\002 \001(\001" +
+      "\022\014\n\004pm10\030\003 \001(\001\022\013\n\003no2\030\004 \001(\001\022\n\n\002o3\030\005 \001(\001\022" +
+      "\031\n\021air_quality_index\030\006 \001(\t\022\021\n\ttimestamp\030" +
+      "\007 \001(\003\"(\n\021NoiseLevelRequest\022\023\n\013location_i" +
+      "d\030\001 \001(\t\"c\n\022NoiseLevelResponse\022\023\n\013locatio" +
+      "n_id\030\001 \001(\t\022\020\n\010decibels\030\002 \001(\001\022\023\n\013noise_le" +
+      "vel\030\003 \001(\t\022\021\n\ttimestamp\030\004 \001(\003\"%\n\016WeatherR" +
+      "equest\022\023\n\013location_id\030\001 \001(\t\"\217\001\n\017WeatherR" +
+      "esponse\022\023\n\013location_id\030\001 \001(\t\022\023\n\013temperat" +
+      "ure\030\002 \001(\001\022\020\n\010humidity\030\003 \001(\001\022\022\n\nwind_spee" +
+      "d\030\004 \001(\001\022\031\n\021weather_condition\030\005 \001(\t\022\021\n\tti" +
+      "mestamp\030\006 \001(\003\"/\n\030EnvironmentalDataReques" +
+      "t\022\023\n\013location_id\030\001 \001(\t\"\330\001\n\021Environmental" +
+      "Data\022\023\n\013location_id\030\001 \001(\t\022\014\n\004pm25\030\002 \001(\001\022" +
+      "\014\n\004pm10\030\003 \001(\001\022\013\n\003no2\030\004 \001(\001\022\n\n\002o3\030\005 \001(\001\022\020" +
+      "\n\010decibels\030\006 \001(\001\022\023\n\013temperature\030\007 \001(\001\022\020\n" +
+      "\010humidity\030\010 \001(\001\022\022\n\nwind_speed\030\t \001(\001\022\031\n\021w" +
+      "eather_condition\030\n \001(\t\022\021\n\ttimestamp\030\013 \001(" +
+      "\003\"M\n\017AirQualityAlert\022\023\n\013location_id\030\001 \001(" +
+      "\t\022\023\n\013description\030\002 \001(\t\022\020\n\010severity\030\003 \001(\t" +
+      "\"1\n\rAlertResponse\022\017\n\007success\030\001 \001(\010\022\017\n\007me" +
+      "ssage\030\002 \001(\t\"R\n\025HistoricalDataRequest\022\023\n\013" +
+      "location_id\030\001 \001(\t\022\022\n\nstart_time\030\002 \001(\003\022\020\n" +
+      "\010end_time\030\003 \001(\003\"n\n\026HistoricalDataRespons" +
+      "e\022\023\n\013location_id\030\001 \001(\t\022?\n\013data_points\030\002 " +
+      "\003(\0132*.com.londonsmartcity.environment.Da" +
+      "taPoint\"\273\001\n\tDataPoint\022\021\n\ttimestamp\030\001 \001(\003" +
+      "\022\014\n\004pm25\030\002 \001(\001\022\014\n\004pm10\030\003 \001(\001\022\013\n\003no2\030\004 \001(" +
+      "\001\022\n\n\002o3\030\005 \001(\001\022\020\n\010decibels\030\006 \001(\001\022\023\n\013tempe" +
+      "rature\030\007 \001(\001\022\020\n\010humidity\030\010 \001(\001\022\022\n\nwind_s" +
+      "peed\030\t \001(\001\022\031\n\021weather_condition\030\n \001(\t\"\332\001" +
+      "\n\023EnvironmentalUpdate\022\023\n\013location_id\030\001 \001" +
+      "(\t\022\014\n\004pm25\030\002 \001(\001\022\014\n\004pm10\030\003 \001(\001\022\013\n\003no2\030\004 " +
+      "\001(\001\022\n\n\002o3\030\005 \001(\001\022\020\n\010decibels\030\006 \001(\001\022\023\n\013tem" +
+      "perature\030\007 \001(\001\022\020\n\010humidity\030\010 \001(\001\022\022\n\nwind" +
+      "_speed\030\t \001(\001\022\031\n\021weather_condition\030\n \001(\t\022" +
+      "\021\n\ttimestamp\030\013 \001(\003\"$\n\rStreamRequest\022\023\n\013l" +
+      "ocation_id\030\001 \001(\t\"\340\001\n\031EnvironmentalDataRe" +
+      "sponse\022\023\n\013location_id\030\001 \001(\t\022\014\n\004pm25\030\002 \001(" +
+      "\001\022\014\n\004pm10\030\003 \001(\001\022\013\n\003no2\030\004 \001(\001\022\n\n\002o3\030\005 \001(\001" +
+      "\022\020\n\010decibels\030\006 \001(\001\022\023\n\013temperature\030\007 \001(\001\022" +
+      "\020\n\010humidity\030\010 \001(\001\022\022\n\nwind_speed\030\t \001(\001\022\031\n" +
+      "\021weather_condition\030\n \001(\t\022\021\n\ttimestamp\030\013 " +
+      "\001(\003\"1\n\032EnvironmentalUpdateRequest\022\023\n\013loc" +
+      "ation_id\030\001 \001(\t2\224\006\n\022EnvironmentService\022z\n" +
+      "\rGetAirQuality\0222.com.londonsmartcity.env" +
+      "ironment.AirQualityRequest\0323.com.londons" +
+      "martcity.environment.AirQualityResponse\"" +
+      "\000\022z\n\rGetNoiseLevel\0222.com.londonsmartcity" +
+      ".environment.NoiseLevelRequest\0323.com.lon" +
+      "donsmartcity.environment.NoiseLevelRespo" +
+      "nse\"\000\022q\n\nGetWeather\022/.com.londonsmartcit" +
+      "y.environment.WeatherRequest\0320.com.londo" +
+      "nsmartcity.environment.WeatherResponse\"\000" +
+      "\022\214\001\n\027StreamEnvironmentalData\0229.com.londo" +
+      "nsmartcity.environment.EnvironmentalData" +
+      "Request\0322.com.londonsmartcity.environmen" +
+      "t.EnvironmentalData\"\0000\001\022{\n\025ReportAirQual" +
+      "ityAlert\0220.com.londonsmartcity.environme" +
+      "nt.AirQualityAlert\032..com.londonsmartcity" +
+      ".environment.AlertResponse\"\000\022\206\001\n\021GetHist" +
+      "oricalData\0226.com.londonsmartcity.environ" +
+      "ment.HistoricalDataRequest\0327.com.londons" +
+      "martcity.environment.HistoricalDataRespo" +
+      "nse\"\000B<\n\037com.londonsmartcity.environment" +
+      "B\027EnvironmentServiceProtoP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_environment_EnvironmentalDataRequest_descriptor =
+    internal_static_com_londonsmartcity_environment_AirQualityRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_environment_EnvironmentalDataRequest_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_environment_AirQualityRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_environment_EnvironmentalDataRequest_descriptor,
-        new java.lang.String[] { "LocationId", "Latitude", "Longitude", });
-    internal_static_environment_EnvironmentalDataResponse_descriptor =
+        internal_static_com_londonsmartcity_environment_AirQualityRequest_descriptor,
+        new java.lang.String[] { "LocationId", });
+    internal_static_com_londonsmartcity_environment_AirQualityResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_environment_EnvironmentalDataResponse_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_environment_AirQualityResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_environment_EnvironmentalDataResponse_descriptor,
-        new java.lang.String[] { "LocationId", "Temperature", "Humidity", "AirQualityIndex", "NoiseLevel", "Co2Level", "Timestamp", });
-    internal_static_environment_AirQualityAlert_descriptor =
+        internal_static_com_londonsmartcity_environment_AirQualityResponse_descriptor,
+        new java.lang.String[] { "LocationId", "Pm25", "Pm10", "No2", "O3", "AirQualityIndex", "Timestamp", });
+    internal_static_com_londonsmartcity_environment_NoiseLevelRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_environment_AirQualityAlert_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_environment_NoiseLevelRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_environment_AirQualityAlert_descriptor,
-        new java.lang.String[] { "LocationId", "AlertType", "Severity", "Description", "Latitude", "Longitude", });
-    internal_static_environment_AlertResponse_descriptor =
+        internal_static_com_londonsmartcity_environment_NoiseLevelRequest_descriptor,
+        new java.lang.String[] { "LocationId", });
+    internal_static_com_londonsmartcity_environment_NoiseLevelResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_environment_AlertResponse_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_environment_NoiseLevelResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_environment_AlertResponse_descriptor,
-        new java.lang.String[] { "Success", "Message", "AlertId", });
-    internal_static_environment_HistoricalDataRequest_descriptor =
+        internal_static_com_londonsmartcity_environment_NoiseLevelResponse_descriptor,
+        new java.lang.String[] { "LocationId", "Decibels", "NoiseLevel", "Timestamp", });
+    internal_static_com_londonsmartcity_environment_WeatherRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_environment_HistoricalDataRequest_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_environment_WeatherRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_environment_HistoricalDataRequest_descriptor,
-        new java.lang.String[] { "LocationId", "StartTime", "EndTime", "Metric", });
-    internal_static_environment_HistoricalDataResponse_descriptor =
+        internal_static_com_londonsmartcity_environment_WeatherRequest_descriptor,
+        new java.lang.String[] { "LocationId", });
+    internal_static_com_londonsmartcity_environment_WeatherResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_environment_HistoricalDataResponse_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_environment_WeatherResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_environment_HistoricalDataResponse_descriptor,
-        new java.lang.String[] { "LocationId", "Metric", "DataPoints", });
-    internal_static_environment_DataPoint_descriptor =
+        internal_static_com_londonsmartcity_environment_WeatherResponse_descriptor,
+        new java.lang.String[] { "LocationId", "Temperature", "Humidity", "WindSpeed", "WeatherCondition", "Timestamp", });
+    internal_static_com_londonsmartcity_environment_EnvironmentalDataRequest_descriptor =
       getDescriptor().getMessageTypes().get(6);
-    internal_static_environment_DataPoint_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_environment_EnvironmentalDataRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_environment_DataPoint_descriptor,
-        new java.lang.String[] { "Timestamp", "Value", });
-    internal_static_environment_EnvironmentalUpdateRequest_descriptor =
+        internal_static_com_londonsmartcity_environment_EnvironmentalDataRequest_descriptor,
+        new java.lang.String[] { "LocationId", });
+    internal_static_com_londonsmartcity_environment_EnvironmentalData_descriptor =
       getDescriptor().getMessageTypes().get(7);
-    internal_static_environment_EnvironmentalUpdateRequest_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_environment_EnvironmentalData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_environment_EnvironmentalUpdateRequest_descriptor,
-        new java.lang.String[] { "LocationId", "Subscribe", });
-    internal_static_environment_EnvironmentalUpdate_descriptor =
+        internal_static_com_londonsmartcity_environment_EnvironmentalData_descriptor,
+        new java.lang.String[] { "LocationId", "Pm25", "Pm10", "No2", "O3", "Decibels", "Temperature", "Humidity", "WindSpeed", "WeatherCondition", "Timestamp", });
+    internal_static_com_londonsmartcity_environment_AirQualityAlert_descriptor =
       getDescriptor().getMessageTypes().get(8);
-    internal_static_environment_EnvironmentalUpdate_fieldAccessorTable = new
+    internal_static_com_londonsmartcity_environment_AirQualityAlert_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_environment_EnvironmentalUpdate_descriptor,
-        new java.lang.String[] { "LocationId", "Temperature", "Humidity", "AirQualityIndex", "NoiseLevel", "Co2Level", "Timestamp", "ActiveAlerts", });
+        internal_static_com_londonsmartcity_environment_AirQualityAlert_descriptor,
+        new java.lang.String[] { "LocationId", "Description", "Severity", });
+    internal_static_com_londonsmartcity_environment_AlertResponse_descriptor =
+      getDescriptor().getMessageTypes().get(9);
+    internal_static_com_londonsmartcity_environment_AlertResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_londonsmartcity_environment_AlertResponse_descriptor,
+        new java.lang.String[] { "Success", "Message", });
+    internal_static_com_londonsmartcity_environment_HistoricalDataRequest_descriptor =
+      getDescriptor().getMessageTypes().get(10);
+    internal_static_com_londonsmartcity_environment_HistoricalDataRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_londonsmartcity_environment_HistoricalDataRequest_descriptor,
+        new java.lang.String[] { "LocationId", "StartTime", "EndTime", });
+    internal_static_com_londonsmartcity_environment_HistoricalDataResponse_descriptor =
+      getDescriptor().getMessageTypes().get(11);
+    internal_static_com_londonsmartcity_environment_HistoricalDataResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_londonsmartcity_environment_HistoricalDataResponse_descriptor,
+        new java.lang.String[] { "LocationId", "DataPoints", });
+    internal_static_com_londonsmartcity_environment_DataPoint_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_com_londonsmartcity_environment_DataPoint_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_londonsmartcity_environment_DataPoint_descriptor,
+        new java.lang.String[] { "Timestamp", "Pm25", "Pm10", "No2", "O3", "Decibels", "Temperature", "Humidity", "WindSpeed", "WeatherCondition", });
+    internal_static_com_londonsmartcity_environment_EnvironmentalUpdate_descriptor =
+      getDescriptor().getMessageTypes().get(13);
+    internal_static_com_londonsmartcity_environment_EnvironmentalUpdate_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_londonsmartcity_environment_EnvironmentalUpdate_descriptor,
+        new java.lang.String[] { "LocationId", "Pm25", "Pm10", "No2", "O3", "Decibels", "Temperature", "Humidity", "WindSpeed", "WeatherCondition", "Timestamp", });
+    internal_static_com_londonsmartcity_environment_StreamRequest_descriptor =
+      getDescriptor().getMessageTypes().get(14);
+    internal_static_com_londonsmartcity_environment_StreamRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_londonsmartcity_environment_StreamRequest_descriptor,
+        new java.lang.String[] { "LocationId", });
+    internal_static_com_londonsmartcity_environment_EnvironmentalDataResponse_descriptor =
+      getDescriptor().getMessageTypes().get(15);
+    internal_static_com_londonsmartcity_environment_EnvironmentalDataResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_londonsmartcity_environment_EnvironmentalDataResponse_descriptor,
+        new java.lang.String[] { "LocationId", "Pm25", "Pm10", "No2", "O3", "Decibels", "Temperature", "Humidity", "WindSpeed", "WeatherCondition", "Timestamp", });
+    internal_static_com_londonsmartcity_environment_EnvironmentalUpdateRequest_descriptor =
+      getDescriptor().getMessageTypes().get(16);
+    internal_static_com_londonsmartcity_environment_EnvironmentalUpdateRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_londonsmartcity_environment_EnvironmentalUpdateRequest_descriptor,
+        new java.lang.String[] { "LocationId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
