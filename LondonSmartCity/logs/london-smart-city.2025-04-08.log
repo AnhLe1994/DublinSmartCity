@@ -1,0 +1,25 @@
+2025-04-08 15:24:40.417 [TrafficService-Thread] INFO  c.l.traffic.TrafficService - Traffic Service started on port 50052
+2025-04-08 15:24:40.417 [EnvironmentService-Thread] INFO  c.l.environment.EnvironmentService - Environment Service started on port 50054
+2025-04-08 15:24:40.417 [DiscoveryServer-Thread] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server started on port 50051
+2025-04-08 15:24:40.421 [DiscoveryServer-Thread] INFO  c.l.LondonSmartCityLauncher - Service Discovery Server started successfully
+2025-04-08 15:24:40.694 [grpc-default-executor-2] INFO  c.l.discovery.ServiceDiscoveryServer - Service registered: traffic-service (Traffic Management Service-1744122279845)
+2025-04-08 15:24:40.694 [grpc-default-executor-1] INFO  c.l.discovery.ServiceDiscoveryServer - Service registered: Public Transport Service (f593a3c9-f211-4ec7-ba52-c95c1ae01aaa)
+2025-04-08 15:24:40.694 [grpc-default-executor-0] INFO  c.l.discovery.ServiceDiscoveryServer - Service registered: environment-service (Environmental Monitoring Service-1744122279846)
+2025-04-08 15:24:40.700 [EnvironmentService-Thread] INFO  c.l.discovery.BaseService - Service environment-service registered successfully with ID f74be3a4-52c4-406d-94ed-5ed466281fb2
+2025-04-08 15:24:40.700 [TransportService-Thread] INFO  c.londonsmartcity.common.BaseService - Public Transport Service service registered successfully with ID: b8ca3aab-5272-452b-a8a2-db42773a38be
+2025-04-08 15:24:40.700 [TrafficService-Thread] INFO  c.l.discovery.BaseService - Service traffic-service registered successfully with ID 0c79c63c-d947-454d-80c8-55bcca9a6263
+2025-04-08 15:24:40.710 [TrafficService-Thread] INFO  c.l.LondonSmartCityLauncher - Traffic Service started successfully
+2025-04-08 15:24:40.710 [TransportService-Thread] INFO  c.londonsmartcity.common.BaseService - Public Transport Service service started successfully
+2025-04-08 15:24:40.712 [TransportService-Thread] INFO  c.l.transport.TransportService - Transport Service started on port 50053
+2025-04-08 15:24:40.712 [TransportService-Thread] INFO  c.l.LondonSmartCityLauncher - Transport Service started successfully
+2025-04-08 15:24:40.712 [EnvironmentService-Thread] INFO  c.l.LondonSmartCityLauncher - Environment Service started successfully
+2025-04-08 15:24:41.250 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-08 15:24:41.355 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Disconnected from traffic service
+2025-04-08 15:24:41.375 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Connected to transport service at localhost:50053
+2025-04-08 15:24:41.375 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-08 15:25:11.079 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Disconnected from traffic service
+2025-04-08 15:25:11.096 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Connected to transport service at localhost:50053
+2025-04-08 15:25:11.096 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-08 15:25:14.837 [Thread-1] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-08 15:25:14.838 [Thread-0] INFO  c.l.discovery.ServiceDiscoveryServer - Shutting down Service Discovery Server
+2025-04-08 15:25:14.858 [Thread-0] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server stopped
