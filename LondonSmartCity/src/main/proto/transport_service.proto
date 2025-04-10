@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package com.londonsmartcity.transport;
-
 option java_multiple_files = true;
 option java_package = "com.londonsmartcity.transport";
 option java_outer_classname = "TransportServiceProto";
+
+package transport;
 
 // Public Transport Service
 service TransportService {
@@ -23,53 +23,57 @@ service TransportService {
 
 message ArrivalInfoRequest {
   string stop_id = 1;
-  string line_id = 2;
+  string transport_type = 2;  // "BUS", "TUBE", "TRAIN"
+  string line_id = 3;
 }
 
 message ArrivalInfoResponse {
   string stop_id = 1;
-  string line_id = 2;
-  repeated ArrivalInfo arrivals = 3;
+  string transport_type = 2;
+  string line_id = 3;
+  repeated ArrivalInfo arrivals = 4;
 }
 
 message ArrivalInfo {
   string vehicle_id = 1;
-  int32 minutes_until_arrival = 2;
-  string status = 3;
+  string destination = 2;
+  int32 minutes_away = 3;
+  string status = 4;  // "ON_TIME", "DELAYED", "APPROACHING"
 }
 
 message ServiceStatusRequest {
-  string line_id = 1;
-  string transport_type = 2;  // "BUS", "TUBE", "TRAIN"
+  string transport_type = 1;
 }
 
 message ServiceStatusResponse {
-  string line_id = 1;
-  string status = 2;
-  string message = 3;
-  LineStatus line_status = 4;
+  string transport_type = 1;
+  repeated LineStatus lines = 2;
 }
 
 message LineStatus {
   string line_id = 1;
-  string status = 2;  // "GOOD_SERVICE", "MINOR_DELAYS", "SEVERE_DELAYS", "PART_SUSPENDED", "SUSPENDED"
-  string description = 3;
-  int64 last_updated = 4;
+  string line_name = 2;
+  string status = 3;  // "GOOD_SERVICE", "MINOR_DELAYS", "SEVERE_DELAYS"
+  string message = 4;
 }
 
 message DisruptionReport {
   string line_id = 1;
-  string description = 2;
-  string severity = 3;
+  string location = 2;
+  string description = 3;
+  string severity = 4;  // "MINOR", "MODERATE", "SEVERE"
+  string estimated_duration = 5;
 }
 
 message DisruptionResponse {
   bool success = 1;
   string message = 2;
+  string disruption_id = 3;
 }
 
 message VehicleLocationRequest {
   string line_id = 1;
+  string vehicle_id = 2;
 }
 
 message VehicleLocation {
@@ -78,5 +82,6 @@ message VehicleLocation {
   double latitude = 3;
   double longitude = 4;
   int32 speed = 5;
-  int64 timestamp = 6;
+  string direction = 6;
+  string timestamp = 7;
 } 
