@@ -16,7 +16,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-public class TrafficPanel extends JPanel {
+public class TrafficPanel extends ServicePanel {
     private static final Logger logger = LoggerFactory.getLogger(TrafficPanel.class);
 
     private final JComboBox<String> locationComboBox;
@@ -103,6 +103,11 @@ public class TrafficPanel extends JPanel {
 
         // Initialize scheduler for updates
         scheduler = Executors.newSingleThreadScheduledExecutor();
+    }
+
+    @Override
+    public String getServiceType() {
+        return "TRAFFIC";
     }
 
     public void updateServices(List<ServiceInfo> services) {

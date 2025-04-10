@@ -4,16 +4,12 @@ import com.londonsmartcity.discovery.ServiceDiscoveryGrpc;
 import com.londonsmartcity.discovery.ServiceDiscoveryRequest;
 import com.londonsmartcity.discovery.ServiceInfo;
 import com.londonsmartcity.discovery.ServiceDiscoveryResponse;
-import com.londonsmartcity.traffic.*;
-import com.londonsmartcity.transport.*;
-import com.londonsmartcity.environment.*;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.util.List;
 import java.util.concurrent.Executors;
@@ -24,11 +20,10 @@ public class SmartCityController extends JFrame {
     private static final Logger logger = LoggerFactory.getLogger(SmartCityController.class);
     private static final String DISCOVERY_SERVICE_HOST = "localhost";
     private static final int DISCOVERY_SERVICE_PORT = 50051;
+    private static final int UPDATE_INTERVAL_SECONDS = 30;
 
     private final JTabbedPane tabbedPane;
-    private final TrafficPanel trafficPanel;
-    private final TransportPanel transportPanel;
-    private final EnvironmentPanel environmentPanel;
+    private final ServicePanel[] servicePanels;
     private final ScheduledExecutorService scheduler;
     private final ManagedChannel discoveryChannel;
     private final ServiceDiscoveryGrpc.ServiceDiscoveryBlockingStub discoveryStub;
@@ -45,23 +40,23 @@ public class SmartCityController extends JFrame {
         // Initialize scheduler for periodic updates
         scheduler = Executors.newScheduledThreadPool(1);
         
-        // Initialize panels
-        trafficPanel = new TrafficPanel();
-        transportPanel = new TransportPanel();
-        environmentPanel = new EnvironmentPanel();
+        // Initialize service panels
+        servicePanels = new ServicePanel[] {
+            new TrafficPanel(),
+            new TransportPanel(),
+            new EnvironmentPanel()
+        };
         
         // Create tabbed pane
         tabbedPane = new JTabbedPane();
-        tabbedPane.addTab("Traffic Management", trafficPanel);
-        tabbedPane.addTab("Public Transport", transportPanel);
-        tabbedPane.addTab("Environment", environmentPanel);
+        tabbedPane.addTab("Traffic Management", servicePanels[0]);
+        tabbedPane.addTab("Public Transport", servicePanels[1]);
+        tabbedPane.addTab("Environment", servicePanels[2]);
         
         // Set up the frame
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1200, 800);
         setLocationRelativeTo(null);
-        
-        // Add components
         add(tabbedPane);
         
         // Start service discovery
@@ -71,59 +66,41 @@ public class SmartCityController extends JFrame {
     private void startServiceDiscovery() {
         scheduler.scheduleAtFixedRate(() -> {
             try {
-                // Discover traffic services
-                ServiceDiscoveryRequest trafficRequest = ServiceDiscoveryRequest.newBuilder()
-                        .setServiceType("TRAFFIC")
-                        .build();
-                ServiceDiscoveryResponse trafficResponse = discoveryStub.discoverServices(trafficRequest);
-                updateTrafficServices(trafficResponse.getServicesList());
-
-                // Discover transport services
-                ServiceDiscoveryRequest transportRequest = ServiceDiscoveryRequest.newBuilder()
-                        .setServiceType("TRANSPORT")
-                        .build();
-                ServiceDiscoveryResponse transportResponse = discoveryStub.discoverServices(transportRequest);
-                updateTransportServices(transportResponse.getServicesList());
-
-                // Discover environment services
-                ServiceDiscoveryRequest environmentRequest = ServiceDiscoveryRequest.newBuilder()
-                        .setServiceType("ENVIRONMENT")
-                        .build();
-                ServiceDiscoveryResponse environmentResponse = discoveryStub.discoverServices(environmentRequest);
-                updateEnvironmentServices(environmentResponse.getServicesList());
+                // Discover services for each panel
+                for (int i = 0; i < servicePanels.length; i++) {
+                    String serviceType = servicePanels[i].getServiceType();
+                    ServiceDiscoveryRequest request = ServiceDiscoveryRequest.newBuilder()
+                            .setServiceType(serviceType)
+                            .build();
+                    ServiceDiscoveryResponse response = discoveryStub.discoverServices(request);
+                    updateServicePanel(i, response.getServicesList());
+                }
             } catch (Exception e) {
                 logger.error("Error discovering services: {}", e.getMessage());
             }
-        }, 0, 30, TimeUnit.SECONDS);
+        }, 0, UPDATE_INTERVAL_SECONDS, TimeUnit.SECONDS);
     }
 
-    private void updateTrafficServices(List<ServiceInfo> services) {
-        SwingUtilities.invokeLater(() -> trafficPanel.updateServices(services));
+    private void updateServicePanel(int panelIndex, List<ServiceInfo> services) {
+        SwingUtilities.invokeLater(() -> servicePanels[panelIndex].updateServices(services));
     }
 
-    private void updateTransportServices(List<ServiceInfo> services) {
-        SwingUtilities.invokeLater(() -> transportPanel.updateServices(services));
-    }
-
-    private void updateEnvironmentServices(List<ServiceInfo> services) {
-        SwingUtilities.invokeLater(() -> environmentPanel.updateServices(services));
-    }
-
-    public void stop() {
+    @Override
+    public void dispose() {
         scheduler.shutdown();
         discoveryChannel.shutdown();
+        super.dispose();
     }
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             try {
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+                SmartCityController controller = new SmartCityController();
+                controller.setVisible(true);
             } catch (Exception e) {
-                logger.error("Error setting look and feel: {}", e.getMessage());
+                logger.error("Error starting Smart City Controller: {}", e.getMessage());
             }
-
-            SmartCityController controller = new SmartCityController();
-            controller.setVisible(true);
         });
     }
 } 

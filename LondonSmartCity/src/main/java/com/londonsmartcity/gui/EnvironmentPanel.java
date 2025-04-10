@@ -17,7 +17,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.Date;
 
-public class EnvironmentPanel extends JPanel {
+public class EnvironmentPanel extends ServicePanel {
     private static final Logger logger = LoggerFactory.getLogger(EnvironmentPanel.class);
 
     private final JComboBox<String> locationComboBox;
@@ -223,5 +223,10 @@ public class EnvironmentPanel extends JPanel {
         if (channel != null) {
             channel.shutdown();
         }
+    }
+
+    @Override
+    public String getServiceType() {
+        return "ENVIRONMENT";
     }
 } 

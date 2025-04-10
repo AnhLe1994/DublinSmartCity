@@ -16,7 +16,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-public class TransportPanel extends JPanel {
+public class TransportPanel extends ServicePanel {
     private static final Logger logger = LoggerFactory.getLogger(TransportPanel.class);
 
     private final JComboBox<String> transportTypeComboBox;
@@ -263,5 +263,10 @@ public class TransportPanel extends JPanel {
         if (channel != null) {
             channel.shutdown();
         }
+    }
+
+    @Override
+    public String getServiceType() {
+        return "TRANSPORT";
     }
 } 
