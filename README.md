@@ -67,7 +67,7 @@ The system consists of several microservices:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/LondonSmartCity.git
+   git clone https://github.com/AnhLe1994AnhLe1994/LondonSmartCity.git
    cd LondonSmartCity
    ```
 
