@@ -1,0 +1,82 @@
+syntax = "proto3";
+
+package com.londonsmartcity.proto;
+
+option java_multiple_files = true;
+option java_package = "com.londonsmartcity.proto";
+option java_outer_classname = "TransportOuterClass";
+
+// Transport Service Definition
+service TransportService {
+    // Unary RPC
+    rpc GetTransportStatus(TransportRequest) returns (TransportResponse) {}
+
+    // Server Streaming RPC
+    rpc StreamTransportUpdates(TransportRequest) returns (stream TransportUpdate) {}
+
+    // Client Streaming RPC
+    rpc ReportTransportIssues(stream TransportIssue) returns (TransportResponse) {}
+
+    // Bi-Directional Streaming RPC
+    rpc MonitorTransport(stream TransportMonitorRequest) returns (stream TransportSummary) {}
+}
+
+// Request message for transport status
+message TransportRequest {
+    string location = 1;
+    string transport_type = 2;  // e.g., "bus", "tube", "train"
+}
+
+// Response message for transport status
+message TransportResponse {
+    bool success = 1;
+    string message = 2;
+    TransportData data = 3;
+}
+
+// Transport data message
+message TransportData {
+    string location = 1;
+    string transport_type = 2;
+    int32 service_status = 3;  // 0-100 scale
+    int32 delay_minutes = 4;
+    repeated string issues = 5;
+    string next_arrival = 6;
+}
+
+// Transport update message
+message TransportUpdate {
+    string location = 1;
+    string transport_type = 2;
+    int32 service_status = 3;
+    int32 delay_minutes = 4;
+    string next_arrival = 5;
+    string timestamp = 6;
+}
+
+// Transport issue message
+message TransportIssue {
+    string location = 1;
+    string transport_type = 2;
+    string type = 3;
+    int32 severity = 4;     // 1-5 scale
+    string description = 5;
+    string timestamp = 6;
+}
+
+// Transport monitor request
+message TransportMonitorRequest {
+    string location = 1;
+    string transport_type = 2;
+    int32 duration = 3;     // in seconds
+}
+
+// Transport summary message
+message TransportSummary {
+    string location = 1;
+    string transport_type = 2;
+    int32 issue_count = 3;
+    int32 average_delay = 4;
+    int32 average_service_status = 5;
+    string timestamp = 6;
+} 

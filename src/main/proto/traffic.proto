@@ -1,0 +1,75 @@
+syntax = "proto3";
+
+package com.londonsmartcity.proto;
+
+option java_multiple_files = true;
+option java_package = "com.londonsmartcity.proto";
+option java_outer_classname = "TrafficOuterClass";
+
+// Traffic Service Definition
+service TrafficService {
+    // Unary RPC
+    rpc GetTrafficStatus(TrafficRequest) returns (TrafficResponse) {}
+
+    // Server Streaming RPC
+    rpc StreamTrafficUpdates(TrafficRequest) returns (stream TrafficUpdate) {}
+
+    // Client Streaming RPC
+    rpc ReportTrafficIncidents(stream TrafficIncident) returns (TrafficResponse) {}
+
+    // Bi-Directional Streaming RPC
+    rpc MonitorTraffic(stream TrafficMonitorRequest) returns (stream TrafficSummary) {}
+}
+
+// Request message for traffic status
+message TrafficRequest {
+    string location = 1;
+}
+
+// Response message for traffic status
+message TrafficResponse {
+    bool success = 1;
+    string message = 2;
+    TrafficData data = 3;
+}
+
+// Traffic data message
+message TrafficData {
+    string location = 1;
+    int32 congestion_level = 2;  // 0-100 scale
+    int32 average_speed = 3;     // in km/h
+    int32 vehicle_count = 4;
+    repeated string incidents = 5;
+}
+
+// Traffic update message
+message TrafficUpdate {
+    string location = 1;
+    int32 congestion_level = 2;
+    int32 average_speed = 3;
+    string timestamp = 4;
+}
+
+// Traffic incident message
+message TrafficIncident {
+    string location = 1;
+    string type = 2;
+    int32 severity = 3;     // 1-5 scale
+    string description = 4;
+    string timestamp = 5;
+}
+
+// Traffic monitor request
+message TrafficMonitorRequest {
+    string location = 1;
+    int32 duration = 2;     // in seconds
+}
+
+// Traffic summary message
+message TrafficSummary {
+    string location = 1;
+    int32 incident_count = 2;
+    int32 average_congestion = 3;
+    int32 average_speed = 4;
+    string timestamp = 5;
+} 

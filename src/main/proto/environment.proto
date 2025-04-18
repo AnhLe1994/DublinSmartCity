@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+package com.londonsmartcity.proto;
+
+option java_multiple_files = true;
+option java_package = "com.londonsmartcity.proto";
+option java_outer_classname = "EnvironmentOuterClass";
+
+// Environment Service Definition
+service EnvironmentService {
+    // Unary RPC
+    rpc GetEnvironmentStatus(EnvironmentRequest) returns (EnvironmentResponse) {}
+
+    // Server Streaming RPC
+    rpc StreamEnvironmentData(EnvironmentRequest) returns (stream EnvironmentData) {}
+
+    // Client Streaming RPC
+    rpc ReportEnvironmentalEvents(stream EnvironmentalEvent) returns (EnvironmentResponse) {}
+
+    // Bi-Directional Streaming RPC
+    rpc MonitorEnvironment(stream EnvironmentMonitorRequest) returns (stream EventSummary) {}
+}
+
+// Request message for environment status
+message EnvironmentRequest {
+    string location = 1;
+}
+
+// Response message for environment status
+message EnvironmentResponse {
+    bool success = 1;
+    string message = 2;
+    EnvironmentData data = 3;
+}
+
+// Environment data message
+message EnvironmentData {
+    string location = 1;
+    int32 air_quality = 2;  // 0-100 scale
+    int32 noise_level = 3;  // 0-100 scale
+    float temperature = 4;  // in Celsius
+    int32 humidity = 5;     // 0-100 percentage
+}
+
+// Environmental event message
+message EnvironmentalEvent {
+    string location = 1;
+    string type = 2;
+    int32 severity = 3;     // 1-5 scale
+    string description = 4;
+}
+
+// Environment monitor request
+message EnvironmentMonitorRequest {
+    string location = 1;
+    int32 duration = 2;     // in seconds
+}
+
+// Event summary message
+message EventSummary {
+    string location = 1;
+    int32 event_count = 2;
+    int32 average_air_quality = 3;
+    int32 average_noise_level = 4;
+} 

@@ -1,0 +1,87 @@
+syntax = "proto3";
+
+package com.londonsmartcity.proto;
+
+option java_multiple_files = true;
+option java_package = "com.londonsmartcity.proto";
+option java_outer_classname = "ServiceDiscoveryOuterClass";
+
+// Service Discovery Service Definition
+service ServiceDiscovery {
+    // Unary RPC
+    rpc DiscoverService(DiscoverRequest) returns (DiscoverResponse) {}
+
+    // Server Streaming RPC
+    rpc StreamServiceUpdates(ServiceRequest) returns (stream ServiceUpdate) {}
+
+    // Client Streaming RPC
+    rpc RegisterServices(stream RegisterRequest) returns (RegisterResponse) {}
+
+    // Bi-Directional Streaming RPC
+    rpc MonitorServices(stream MonitorRequest) returns (stream ServiceStatus) {}
+}
+
+// Service information message
+message ServiceInfo {
+    string service_id = 1;
+    string service_type = 2;
+    string host = 3;
+    int32 port = 4;
+    map<string, string> metadata = 5;
+    string status = 6;
+    int64 last_heartbeat = 7;
+}
+
+// Discover service request
+message DiscoverRequest {
+    string service_type = 1;
+    string service_id = 2;
+}
+
+// Discover service response
+message DiscoverResponse {
+    bool success = 1;
+    string message = 2;
+    ServiceInfo service = 3;
+}
+
+// Service request message
+message ServiceRequest {
+    string service_type = 1;
+}
+
+// Service update message
+message ServiceUpdate {
+    string service_id = 1;
+    string service_type = 2;
+    string status = 3;
+    int64 timestamp = 4;
+}
+
+// Register service request
+message RegisterRequest {
+    ServiceInfo service = 1;
+    int32 ttl = 2;  // Time to live in seconds
+}
+
+// Register service response
+message RegisterResponse {
+    bool success = 1;
+    string message = 2;
+    string service_id = 3;
+}
+
+// Monitor service request
+message MonitorRequest {
+    string service_type = 1;
+    int32 duration = 2;  // in seconds
+}
+
+// Service status message
+message ServiceStatus {
+    string service_id = 1;
+    string service_type = 2;
+    string status = 3;
+    int32 active_instances = 4;
+    int64 timestamp = 5;
+} 

@@ -1,0 +1,295 @@
+2025-04-15 12:51:18.053 [DiscoveryServer-Thread] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server started on port 50051
+2025-04-15 12:51:18.053 [EnvironmentService-Thread] INFO  c.l.environment.EnvironmentService - Environment Service started on port 50054
+2025-04-15 12:51:18.053 [TransportService-Thread] INFO  c.l.transport.TransportService - Transport Service started on port 50053
+2025-04-15 12:51:18.053 [TrafficService-Thread] INFO  c.l.traffic.TrafficService - Traffic service started on port 50052
+2025-04-15 12:51:18.076 [DiscoveryServer-Thread] INFO  c.l.LondonSmartCityLauncher - Service Discovery Server started successfully
+2025-04-15 12:51:18.392 [grpc-default-executor-0] INFO  c.l.discovery.ServiceDiscoveryServer - Service registered: Public Transport Service (e089d214-d7bb-4498-aaed-ac646466ca39)
+2025-04-15 12:51:18.392 [grpc-default-executor-1] INFO  c.l.discovery.ServiceDiscoveryServer - Service registered: Environmental Monitoring Service (0e8d7ec1-ad64-4de3-a2eb-6610d78a7e72)
+2025-04-15 12:51:18.392 [grpc-default-executor-2] INFO  c.l.discovery.ServiceDiscoveryServer - Service registered: Traffic Management Service (4486c41c-d4e4-4d6f-99d4-4e959af76625)
+2025-04-15 12:51:18.400 [TrafficService-Thread] INFO  c.londonsmartcity.common.BaseService - Traffic Management Service service registered successfully with ID: 25e52499-1ace-4734-a62c-1653bf76144e
+2025-04-15 12:51:18.400 [TransportService-Thread] INFO  c.londonsmartcity.common.BaseService - Public Transport Service service registered successfully with ID: 5075ba9d-e36e-4be6-8095-f416f4bb4b36
+2025-04-15 12:51:18.400 [EnvironmentService-Thread] INFO  c.londonsmartcity.common.BaseService - Environmental Monitoring Service service registered successfully with ID: d85c2024-f062-4fcc-a9f3-7bb1cea18f46
+2025-04-15 12:51:18.401 [TransportService-Thread] INFO  c.londonsmartcity.common.BaseService - Public Transport Service service started successfully
+2025-04-15 12:51:18.401 [EnvironmentService-Thread] INFO  c.londonsmartcity.common.BaseService - Environmental Monitoring Service service started successfully
+2025-04-15 12:51:18.401 [TrafficService-Thread] INFO  c.londonsmartcity.common.BaseService - Traffic Management Service service started successfully
+2025-04-15 12:51:18.402 [TrafficService-Thread] INFO  c.l.LondonSmartCityLauncher - Traffic Service started successfully
+2025-04-15 12:51:18.402 [TransportService-Thread] INFO  c.l.LondonSmartCityLauncher - Transport Service started successfully
+2025-04-15 12:51:18.403 [EnvironmentService-Thread] INFO  c.l.LondonSmartCityLauncher - Environment Service started successfully
+2025-04-15 12:51:18.925 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 12:51:19.043 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Connected to traffic service at localhost:50052
+2025-04-15 12:51:19.073 [AWT-EventQueue-0] ERROR c.londonsmartcity.gui.TransportPanel - Failed to connect to transport service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 12:51:19.075 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 12:51:19.090 [AWT-EventQueue-0] ERROR c.l.gui.EnvironmentPanel - Failed to connect to environment service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 12:51:19.105 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 12:51:36.033 [Thread-1] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-15 12:51:36.034 [Thread-0] INFO  c.l.discovery.ServiceDiscoveryServer - Shutting down Service Discovery Server
+2025-04-15 12:51:36.042 [Thread-0] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server stopped
+2025-04-15 13:03:23.521 [TrafficService-Thread] INFO  c.l.traffic.TrafficService - Traffic service started on port 50052
+2025-04-15 13:03:23.522 [DiscoveryServer-Thread] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server started on port 50051
+2025-04-15 13:03:23.521 [TransportService-Thread] INFO  c.l.transport.TransportService - Transport Service started on port 50053
+2025-04-15 13:03:23.521 [EnvironmentService-Thread] INFO  c.l.environment.EnvironmentService - Environment Service started on port 50054
+2025-04-15 13:03:23.526 [DiscoveryServer-Thread] INFO  c.l.LondonSmartCityLauncher - Service Discovery Server started successfully
+2025-04-15 13:03:23.748 [EnvironmentService-Thread] ERROR c.londonsmartcity.common.BaseService - Failed to start Environmental Monitoring Service service: UNKNOWN
+2025-04-15 13:03:23.748 [TransportService-Thread] ERROR c.londonsmartcity.common.BaseService - Failed to start Public Transport Service service: UNKNOWN
+2025-04-15 13:03:23.748 [TrafficService-Thread] ERROR c.londonsmartcity.common.BaseService - Failed to start Traffic Management Service service: UNKNOWN
+2025-04-15 13:03:23.749 [EnvironmentService-Thread] ERROR c.l.environment.EnvironmentService - Failed to start environment service: Service startup failed
+2025-04-15 13:03:23.749 [TransportService-Thread] ERROR c.l.transport.TransportService - Failed to start transport service: Service startup failed
+2025-04-15 13:03:23.749 [TrafficService-Thread] ERROR c.l.traffic.TrafficService - Failed to start traffic service: Service startup failed
+2025-04-15 13:03:23.749 [EnvironmentService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Environment Service: Service startup failed
+2025-04-15 13:03:23.749 [TransportService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Transport Service: Service startup failed
+2025-04-15 13:03:23.749 [TrafficService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Traffic Service: Failed to start traffic service
+2025-04-15 13:03:52.949 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 13:03:53.392 [pool-9-thread-1] ERROR c.l.gui.SmartCityController - Error discovering services: UNKNOWN
+2025-04-15 13:03:53.545 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 13:04:13.011 [TrafficService-Thread] INFO  c.l.traffic.TrafficService - Traffic service started on port 50052
+2025-04-15 13:04:13.010 [EnvironmentService-Thread] INFO  c.l.environment.EnvironmentService - Environment Service started on port 50054
+2025-04-15 13:04:13.011 [TransportService-Thread] INFO  c.l.transport.TransportService - Transport Service started on port 50053
+2025-04-15 13:04:13.011 [DiscoveryServer-Thread] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server started on port 50051
+2025-04-15 13:04:13.017 [DiscoveryServer-Thread] INFO  c.l.LondonSmartCityLauncher - Service Discovery Server started successfully
+2025-04-15 13:04:13.281 [TransportService-Thread] ERROR c.londonsmartcity.common.BaseService - Failed to start Public Transport Service service: UNKNOWN
+2025-04-15 13:04:13.281 [TrafficService-Thread] ERROR c.londonsmartcity.common.BaseService - Failed to start Traffic Management Service service: UNKNOWN
+2025-04-15 13:04:13.281 [TransportService-Thread] ERROR c.l.transport.TransportService - Failed to start transport service: Service startup failed
+2025-04-15 13:04:13.281 [EnvironmentService-Thread] ERROR c.londonsmartcity.common.BaseService - Failed to start Environmental Monitoring Service service: UNKNOWN
+2025-04-15 13:04:13.281 [TrafficService-Thread] ERROR c.l.traffic.TrafficService - Failed to start traffic service: Service startup failed
+2025-04-15 13:04:13.281 [TransportService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Transport Service: Service startup failed
+2025-04-15 13:04:13.281 [EnvironmentService-Thread] ERROR c.l.environment.EnvironmentService - Failed to start environment service: Service startup failed
+2025-04-15 13:04:13.281 [TrafficService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Traffic Service: Failed to start traffic service
+2025-04-15 13:04:13.281 [EnvironmentService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Environment Service: Service startup failed
+2025-04-15 13:04:20.219 [Thread-0] INFO  c.l.discovery.ServiceDiscoveryServer - Shutting down Service Discovery Server
+2025-04-15 13:04:20.230 [Thread-0] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server stopped
+2025-04-15 13:04:50.096 [TransportService-Thread] INFO  c.l.transport.TransportService - Transport Service started on port 50053
+2025-04-15 13:04:50.097 [DiscoveryServer-Thread] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server started on port 50051
+2025-04-15 13:04:50.096 [TrafficService-Thread] INFO  c.l.traffic.TrafficService - Traffic service started on port 50052
+2025-04-15 13:04:50.096 [EnvironmentService-Thread] INFO  c.l.environment.EnvironmentService - Environment Service started on port 50054
+2025-04-15 13:04:50.101 [DiscoveryServer-Thread] INFO  c.l.LondonSmartCityLauncher - Service Discovery Server started successfully
+2025-04-15 13:04:50.323 [EnvironmentService-Thread] ERROR c.londonsmartcity.common.BaseService - Failed to start Environmental Monitoring Service service: UNKNOWN
+2025-04-15 13:04:50.323 [TrafficService-Thread] ERROR c.londonsmartcity.common.BaseService - Failed to start Traffic Management Service service: UNKNOWN
+2025-04-15 13:04:50.323 [TransportService-Thread] ERROR c.londonsmartcity.common.BaseService - Failed to start Public Transport Service service: UNKNOWN
+2025-04-15 13:04:50.323 [TrafficService-Thread] ERROR c.l.traffic.TrafficService - Failed to start traffic service: Service startup failed
+2025-04-15 13:04:50.323 [TransportService-Thread] ERROR c.l.transport.TransportService - Failed to start transport service: Service startup failed
+2025-04-15 13:04:50.323 [EnvironmentService-Thread] ERROR c.l.environment.EnvironmentService - Failed to start environment service: Service startup failed
+2025-04-15 13:04:50.325 [TransportService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Transport Service: Service startup failed
+2025-04-15 13:04:50.323 [TrafficService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Traffic Service: Failed to start traffic service
+2025-04-15 13:04:50.325 [EnvironmentService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Environment Service: Service startup failed
+2025-04-15 13:05:19.533 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 13:05:19.978 [pool-9-thread-1] ERROR c.l.gui.SmartCityController - Error discovering services: UNKNOWN
+2025-04-15 13:05:20.137 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 13:05:43.324 [EnvironmentService-Thread] ERROR c.l.environment.EnvironmentService - Failed to start environment service: Failed to bind to address 0.0.0.0/0.0.0.0:50054
+2025-04-15 13:05:43.324 [DiscoveryServer-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Service Discovery Server: Failed to bind to address 0.0.0.0/0.0.0.0:50051
+2025-04-15 13:05:43.328 [EnvironmentService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Environment Service: Service startup failed
+2025-04-15 13:05:43.328 [TrafficService-Thread] ERROR c.l.traffic.TrafficService - Failed to start traffic service: Failed to bind to address 0.0.0.0/0.0.0.0:50052
+2025-04-15 13:05:43.328 [TransportService-Thread] ERROR c.l.transport.TransportService - Failed to start transport service: Failed to bind to address 0.0.0.0/0.0.0.0:50053
+2025-04-15 13:05:43.328 [TrafficService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Traffic Service: Failed to start traffic service
+2025-04-15 13:05:43.328 [TransportService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Transport Service: Service startup failed
+2025-04-15 13:05:49.969 [pool-9-thread-1] ERROR c.l.gui.SmartCityController - Error discovering services: UNKNOWN
+2025-04-15 13:06:01.647 [DiscoveryServer-Thread] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server started on port 50051
+2025-04-15 13:06:01.646 [EnvironmentService-Thread] INFO  c.l.environment.EnvironmentService - Environment Service started on port 50054
+2025-04-15 13:06:01.646 [TrafficService-Thread] INFO  c.l.traffic.TrafficService - Traffic service started on port 50052
+2025-04-15 13:06:01.646 [TransportService-Thread] INFO  c.l.transport.TransportService - Transport Service started on port 50053
+2025-04-15 13:06:01.651 [DiscoveryServer-Thread] INFO  c.l.LondonSmartCityLauncher - Service Discovery Server started successfully
+2025-04-15 13:06:01.874 [TransportService-Thread] ERROR c.londonsmartcity.common.BaseService - Failed to start Public Transport Service service: UNKNOWN
+2025-04-15 13:06:01.874 [TrafficService-Thread] ERROR c.londonsmartcity.common.BaseService - Failed to start Traffic Management Service service: UNKNOWN
+2025-04-15 13:06:01.874 [EnvironmentService-Thread] ERROR c.londonsmartcity.common.BaseService - Failed to start Environmental Monitoring Service service: UNKNOWN
+2025-04-15 13:06:01.875 [TrafficService-Thread] ERROR c.l.traffic.TrafficService - Failed to start traffic service: Service startup failed
+2025-04-15 13:06:01.875 [TransportService-Thread] ERROR c.l.transport.TransportService - Failed to start transport service: Service startup failed
+2025-04-15 13:06:01.875 [EnvironmentService-Thread] ERROR c.l.environment.EnvironmentService - Failed to start environment service: Service startup failed
+2025-04-15 13:06:01.875 [TrafficService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Traffic Service: Failed to start traffic service
+2025-04-15 13:06:01.875 [TransportService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Transport Service: Service startup failed
+2025-04-15 13:06:01.875 [EnvironmentService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Environment Service: Service startup failed
+2025-04-15 13:06:31.088 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 13:06:31.482 [pool-9-thread-1] ERROR c.l.gui.SmartCityController - Error discovering services: UNKNOWN
+2025-04-15 13:06:31.624 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 13:07:01.473 [pool-9-thread-1] ERROR c.l.gui.SmartCityController - Error discovering services: UNKNOWN
+2025-04-15 13:07:05.321 [Thread-1] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-15 13:07:05.321 [Thread-0] INFO  c.l.discovery.ServiceDiscoveryServer - Shutting down Service Discovery Server
+2025-04-15 13:07:05.331 [Thread-0] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server stopped
+2025-04-15 14:15:39.202 [DiscoveryServer-Thread] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server started on port 50051
+2025-04-15 14:15:39.211 [DiscoveryServer-Thread] INFO  c.l.LondonSmartCityLauncher - Service Discovery Server started successfully
+2025-04-15 14:15:41.693 [TrafficService-Thread] INFO  c.l.traffic.TrafficService - Traffic service started on port 50052
+2025-04-15 14:15:41.708 [TransportService-Thread] INFO  c.l.transport.TransportService - Transport Service started on port 50053
+2025-04-15 14:15:41.725 [EnvironmentService-Thread] INFO  c.l.environment.EnvironmentService - Environment Service started on port 50054
+2025-04-15 14:15:42.128 [grpc-default-executor-2] INFO  c.l.discovery.ServiceDiscoveryServer - Service registered: Public Transport Service (2f3de02c-6c21-4430-86a3-377a5e5d6403)
+2025-04-15 14:15:42.128 [grpc-default-executor-1] INFO  c.l.discovery.ServiceDiscoveryServer - Service registered: Traffic Management Service (e9ed0065-6a9d-4d84-81ff-d1b94b5b8bc9)
+2025-04-15 14:15:42.130 [grpc-default-executor-0] INFO  c.l.discovery.ServiceDiscoveryServer - Service registered: Environmental Monitoring Service (81396119-74b3-4177-ad81-cd2ea9da0d38)
+2025-04-15 14:15:42.137 [TransportService-Thread] INFO  c.londonsmartcity.common.BaseService - Public Transport Service service registered successfully with ID: 197e97cb-5049-4548-94eb-5c40e9b7452e
+2025-04-15 14:15:42.137 [TrafficService-Thread] INFO  c.londonsmartcity.common.BaseService - Traffic Management Service service registered successfully with ID: 835fd1b9-8680-491e-a351-a549e39a24df
+2025-04-15 14:15:42.137 [EnvironmentService-Thread] INFO  c.londonsmartcity.common.BaseService - Environmental Monitoring Service service registered successfully with ID: 67a16f38-44ca-424f-b84f-6deb69c6a213
+2025-04-15 14:15:42.139 [TransportService-Thread] INFO  c.londonsmartcity.common.BaseService - Public Transport Service service started successfully
+2025-04-15 14:15:42.140 [EnvironmentService-Thread] INFO  c.londonsmartcity.common.BaseService - Environmental Monitoring Service service started successfully
+2025-04-15 14:15:42.140 [TrafficService-Thread] INFO  c.londonsmartcity.common.BaseService - Traffic Management Service service started successfully
+2025-04-15 14:15:42.140 [TrafficService-Thread] INFO  c.l.LondonSmartCityLauncher - Traffic Service started successfully
+2025-04-15 14:15:42.141 [EnvironmentService-Thread] INFO  c.l.LondonSmartCityLauncher - Environment Service started successfully
+2025-04-15 14:15:42.141 [TransportService-Thread] INFO  c.l.LondonSmartCityLauncher - Transport Service started successfully
+2025-04-15 14:15:42.989 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 14:15:43.138 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Connected to traffic service at localhost:50052
+2025-04-15 14:15:43.193 [AWT-EventQueue-0] ERROR c.londonsmartcity.gui.TransportPanel - Failed to connect to transport service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:15:43.197 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:15:43.219 [AWT-EventQueue-0] ERROR c.l.gui.EnvironmentPanel - Failed to connect to environment service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:15:43.219 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:16:12.796 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Connected to traffic service at localhost:50052
+2025-04-15 14:16:12.807 [AWT-EventQueue-0] ERROR c.londonsmartcity.gui.TransportPanel - Failed to connect to transport service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:16:12.808 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:16:12.814 [AWT-EventQueue-0] ERROR c.l.gui.EnvironmentPanel - Failed to connect to environment service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:16:12.814 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:16:16.334 [DiscoveryServer-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Service Discovery Server: Failed to bind to address 0.0.0.0/0.0.0.0:50051
+2025-04-15 14:16:18.891 [TrafficService-Thread] ERROR c.l.traffic.TrafficService - Failed to start traffic service: Failed to bind to address 0.0.0.0/0.0.0.0:50052
+2025-04-15 14:16:18.891 [TrafficService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Traffic Service: Failed to start traffic service
+2025-04-15 14:16:18.893 [EnvironmentService-Thread] ERROR c.l.environment.EnvironmentService - Failed to start environment service: Failed to bind to address 0.0.0.0/0.0.0.0:50054
+2025-04-15 14:16:18.894 [EnvironmentService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Environment Service: Service startup failed
+2025-04-15 14:16:18.898 [TransportService-Thread] ERROR c.l.transport.TransportService - Failed to start transport service: Failed to bind to address 0.0.0.0/0.0.0.0:50053
+2025-04-15 14:16:18.898 [TransportService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Transport Service: Service startup failed
+2025-04-15 14:16:42.844 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Connected to traffic service at localhost:50052
+2025-04-15 14:16:42.870 [AWT-EventQueue-0] ERROR c.londonsmartcity.gui.TransportPanel - Failed to connect to transport service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:16:42.870 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:16:42.889 [AWT-EventQueue-0] ERROR c.l.gui.EnvironmentPanel - Failed to connect to environment service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:16:42.891 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:16:45.738 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 14:16:46.860 [Thread-0] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-15 14:17:12.810 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Connected to traffic service at localhost:50052
+2025-04-15 14:17:12.827 [AWT-EventQueue-0] ERROR c.londonsmartcity.gui.TransportPanel - Failed to connect to transport service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:17:12.827 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:17:12.843 [AWT-EventQueue-0] ERROR c.l.gui.EnvironmentPanel - Failed to connect to environment service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:17:12.844 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:17:21.715 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 14:17:22.206 [DiscoveryServer-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Service Discovery Server: Failed to bind to address 0.0.0.0/0.0.0.0:50051
+2025-04-15 14:17:23.062 [TrafficService-Thread] ERROR c.l.traffic.TrafficService - Failed to start traffic service: Failed to bind to address 0.0.0.0/0.0.0.0:50052
+2025-04-15 14:17:23.062 [TrafficService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Traffic Service: Failed to start traffic service
+2025-04-15 14:17:23.106 [EnvironmentService-Thread] ERROR c.l.environment.EnvironmentService - Failed to start environment service: Failed to bind to address 0.0.0.0/0.0.0.0:50054
+2025-04-15 14:17:23.107 [EnvironmentService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Environment Service: Service startup failed
+2025-04-15 14:17:23.365 [TransportService-Thread] ERROR c.l.transport.TransportService - Failed to start transport service: Failed to bind to address 0.0.0.0/0.0.0.0:50053
+2025-04-15 14:17:23.366 [TransportService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Transport Service: Service startup failed
+2025-04-15 14:17:23.495 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 14:17:24.712 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Connected to traffic service at localhost:50052
+2025-04-15 14:17:24.777 [AWT-EventQueue-0] ERROR c.londonsmartcity.gui.TransportPanel - Failed to connect to transport service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:17:24.780 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:17:24.871 [AWT-EventQueue-0] ERROR c.l.gui.EnvironmentPanel - Failed to connect to environment service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:17:24.872 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:17:27.194 [DiscoveryServer-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Service Discovery Server: Failed to bind to address 0.0.0.0/0.0.0.0:50051
+2025-04-15 14:17:31.097 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 14:17:32.146 [Thread-0] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-15 14:17:39.388 [pool-1-thread-1] INFO  c.l.discovery.ServiceDiscoveryServer - Removing stale service: Traffic Management Service
+2025-04-15 14:17:39.407 [pool-1-thread-1] INFO  c.l.discovery.ServiceDiscoveryServer - Removing stale service: Environmental Monitoring Service
+2025-04-15 14:17:39.407 [pool-1-thread-1] INFO  c.l.discovery.ServiceDiscoveryServer - Removing stale service: Public Transport Service
+2025-04-15 14:17:42.791 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Disconnected from traffic service
+2025-04-15 14:17:42.804 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:17:42.817 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:17:46.231 [DiscoveryServer-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Service Discovery Server: Failed to bind to address 0.0.0.0/0.0.0.0:50051
+2025-04-15 14:17:48.086 [TrafficService-Thread] ERROR c.l.traffic.TrafficService - Failed to start traffic service: Failed to bind to address 0.0.0.0/0.0.0.0:50052
+2025-04-15 14:17:48.086 [TrafficService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Traffic Service: Failed to start traffic service
+2025-04-15 14:17:48.139 [TransportService-Thread] ERROR c.l.transport.TransportService - Failed to start transport service: Failed to bind to address 0.0.0.0/0.0.0.0:50053
+2025-04-15 14:17:48.140 [TransportService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Transport Service: Service startup failed
+2025-04-15 14:17:48.235 [EnvironmentService-Thread] ERROR c.l.environment.EnvironmentService - Failed to start environment service: Failed to bind to address 0.0.0.0/0.0.0.0:50054
+2025-04-15 14:17:48.237 [EnvironmentService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Environment Service: Service startup failed
+2025-04-15 14:17:48.325 [DiscoveryServer-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Service Discovery Server: Failed to bind to address 0.0.0.0/0.0.0.0:50051
+2025-04-15 14:17:49.483 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 14:17:50.400 [TrafficService-Thread] ERROR c.l.traffic.TrafficService - Failed to start traffic service: Failed to bind to address 0.0.0.0/0.0.0.0:50052
+2025-04-15 14:17:50.401 [TrafficService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Traffic Service: Failed to start traffic service
+2025-04-15 14:17:50.417 [TransportService-Thread] ERROR c.l.transport.TransportService - Failed to start transport service: Failed to bind to address 0.0.0.0/0.0.0.0:50053
+2025-04-15 14:17:50.417 [TransportService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Transport Service: Service startup failed
+2025-04-15 14:17:50.420 [EnvironmentService-Thread] ERROR c.l.environment.EnvironmentService - Failed to start environment service: Failed to bind to address 0.0.0.0/0.0.0.0:50054
+2025-04-15 14:17:50.420 [EnvironmentService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Environment Service: Service startup failed
+2025-04-15 14:17:50.433 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 14:17:50.869 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Disconnected from traffic service
+2025-04-15 14:17:50.880 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:17:50.888 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:17:51.974 [DiscoveryServer-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Service Discovery Server: Failed to bind to address 0.0.0.0/0.0.0.0:50051
+2025-04-15 14:17:53.179 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Disconnected from traffic service
+2025-04-15 14:17:53.183 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:17:53.187 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:17:53.926 [DiscoveryServer-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Service Discovery Server: Failed to bind to address 0.0.0.0/0.0.0.0:50051
+2025-04-15 14:17:54.279 [TrafficService-Thread] ERROR c.l.traffic.TrafficService - Failed to start traffic service: Failed to bind to address 0.0.0.0/0.0.0.0:50052
+2025-04-15 14:17:54.279 [TrafficService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Traffic Service: Failed to start traffic service
+2025-04-15 14:17:54.297 [TransportService-Thread] ERROR c.l.transport.TransportService - Failed to start transport service: Failed to bind to address 0.0.0.0/0.0.0.0:50053
+2025-04-15 14:17:54.298 [TransportService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Transport Service: Service startup failed
+2025-04-15 14:17:54.299 [EnvironmentService-Thread] ERROR c.l.environment.EnvironmentService - Failed to start environment service: Failed to bind to address 0.0.0.0/0.0.0.0:50054
+2025-04-15 14:17:54.299 [EnvironmentService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Environment Service: Service startup failed
+2025-04-15 14:17:55.511 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 14:17:56.871 [Thread-0] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-15 14:18:01.327 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 14:18:02.186 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 14:18:02.533 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Disconnected from traffic service
+2025-04-15 14:18:02.544 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:18:02.547 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:18:02.911 [DiscoveryServer-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Service Discovery Server: Failed to bind to address 0.0.0.0/0.0.0.0:50051
+2025-04-15 14:18:05.487 [TrafficService-Thread] ERROR c.l.traffic.TrafficService - Failed to start traffic service: Failed to bind to address 0.0.0.0/0.0.0.0:50052
+2025-04-15 14:18:05.487 [TrafficService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Traffic Service: Failed to start traffic service
+2025-04-15 14:18:05.493 [TransportService-Thread] ERROR c.l.transport.TransportService - Failed to start transport service: Failed to bind to address 0.0.0.0/0.0.0.0:50053
+2025-04-15 14:18:05.493 [EnvironmentService-Thread] ERROR c.l.environment.EnvironmentService - Failed to start environment service: Failed to bind to address 0.0.0.0/0.0.0.0:50054
+2025-04-15 14:18:05.493 [TransportService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Transport Service: Service startup failed
+2025-04-15 14:18:05.493 [EnvironmentService-Thread] ERROR c.l.LondonSmartCityLauncher - Failed to start Environment Service: Service startup failed
+2025-04-15 14:18:12.786 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Disconnected from traffic service
+2025-04-15 14:18:12.789 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:18:12.791 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:18:14.811 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 14:18:15.513 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 14:18:15.781 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Disconnected from traffic service
+2025-04-15 14:18:15.784 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:18:15.784 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:18:17.052 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 14:18:17.705 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 14:18:17.971 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Disconnected from traffic service
+2025-04-15 14:18:17.977 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:18:17.983 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:18:20.172 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Disconnected from traffic service
+2025-04-15 14:18:20.181 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:18:20.186 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:18:21.137 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 14:18:21.742 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 14:18:22.010 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Disconnected from traffic service
+2025-04-15 14:18:22.015 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:18:22.021 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:18:23.174 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Disconnected from traffic service
+2025-04-15 14:18:23.177 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:18:23.181 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:18:23.283 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 14:18:23.995 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 14:18:24.261 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Disconnected from traffic service
+2025-04-15 14:18:24.270 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:18:24.276 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:18:29.637 [Thread-0] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-15 14:18:29.965 [Thread-0] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-15 14:18:30.351 [Thread-0] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-15 14:18:30.605 [Thread-0] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-15 14:18:30.780 [Thread-0] INFO  c.l.discovery.ServiceDiscoveryServer - Shutting down Service Discovery Server
+2025-04-15 14:18:30.790 [Thread-1] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-15 14:18:30.798 [Thread-0] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server stopped
+2025-04-15 14:18:30.983 [Thread-0] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-15 14:18:31.157 [Thread-0] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-15 14:18:32.011 [pool-3-thread-1] ERROR c.l.gui.SmartCityController - Error discovering services: UNAVAILABLE: io exception
+2025-04-15 14:18:32.322 [main] WARN  c.l.LondonSmartCityLauncher - Not all services started within timeout period
+2025-04-15 14:18:32.992 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 14:18:33.161 [pool-9-thread-1] ERROR c.l.gui.SmartCityController - Error discovering services: UNAVAILABLE: io exception
+2025-04-15 14:19:20.111 [DiscoveryServer-Thread] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server started on port 50051
+2025-04-15 14:19:20.115 [DiscoveryServer-Thread] INFO  c.l.LondonSmartCityLauncher - Service Discovery Server started successfully
+2025-04-15 14:19:22.725 [TrafficService-Thread] INFO  c.l.traffic.TrafficService - Traffic service started on port 50052
+2025-04-15 14:19:22.727 [TransportService-Thread] INFO  c.l.transport.TransportService - Transport Service started on port 50053
+2025-04-15 14:19:22.740 [EnvironmentService-Thread] INFO  c.l.environment.EnvironmentService - Environment Service started on port 50054
+2025-04-15 14:19:23.058 [grpc-default-executor-3] INFO  c.l.discovery.ServiceDiscoveryServer - Service registered: Public Transport Service (7125b243-5493-4322-b483-348e5b098b6e)
+2025-04-15 14:19:23.058 [grpc-default-executor-1] INFO  c.l.discovery.ServiceDiscoveryServer - Service registered: Environmental Monitoring Service (5925e163-e90e-4594-b711-b693a9133eed)
+2025-04-15 14:19:23.058 [grpc-default-executor-0] INFO  c.l.discovery.ServiceDiscoveryServer - Service registered: Traffic Management Service (073df144-ce7d-4c2c-bef3-688ffede73c3)
+2025-04-15 14:19:23.065 [EnvironmentService-Thread] INFO  c.londonsmartcity.common.BaseService - Environmental Monitoring Service service registered successfully with ID: 7d05cebe-95db-4270-938d-54a021ebfb20
+2025-04-15 14:19:23.065 [TrafficService-Thread] INFO  c.londonsmartcity.common.BaseService - Traffic Management Service service registered successfully with ID: 4469da87-3a61-4e77-9aab-3d8678306537
+2025-04-15 14:19:23.065 [TransportService-Thread] INFO  c.londonsmartcity.common.BaseService - Public Transport Service service registered successfully with ID: 2a8a4d26-c0b7-4d0b-b2d9-b398f3d74c16
+2025-04-15 14:19:23.067 [EnvironmentService-Thread] INFO  c.londonsmartcity.common.BaseService - Environmental Monitoring Service service started successfully
+2025-04-15 14:19:23.067 [TrafficService-Thread] INFO  c.londonsmartcity.common.BaseService - Traffic Management Service service started successfully
+2025-04-15 14:19:23.067 [TransportService-Thread] INFO  c.londonsmartcity.common.BaseService - Public Transport Service service started successfully
+2025-04-15 14:19:23.068 [TrafficService-Thread] INFO  c.l.LondonSmartCityLauncher - Traffic Service started successfully
+2025-04-15 14:19:23.069 [TransportService-Thread] INFO  c.l.LondonSmartCityLauncher - Transport Service started successfully
+2025-04-15 14:19:23.069 [EnvironmentService-Thread] INFO  c.l.LondonSmartCityLauncher - Environment Service started successfully
+2025-04-15 14:19:23.666 [AWT-EventQueue-0] INFO  c.l.LondonSmartCityLauncher - Smart City Controller GUI started successfully
+2025-04-15 14:19:23.850 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Connected to traffic service at localhost:50052
+2025-04-15 14:19:23.884 [AWT-EventQueue-0] ERROR c.londonsmartcity.gui.TransportPanel - Failed to connect to transport service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:19:23.892 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:19:23.909 [AWT-EventQueue-0] ERROR c.l.gui.EnvironmentPanel - Failed to connect to environment service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:19:23.911 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:19:53.510 [AWT-EventQueue-0] INFO  com.londonsmartcity.gui.TrafficPanel - Connected to traffic service at localhost:50052
+2025-04-15 14:19:53.519 [AWT-EventQueue-0] ERROR c.londonsmartcity.gui.TransportPanel - Failed to connect to transport service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:19:53.520 [AWT-EventQueue-0] INFO  c.londonsmartcity.gui.TransportPanel - Disconnected from transport service
+2025-04-15 14:19:53.527 [AWT-EventQueue-0] ERROR c.l.gui.EnvironmentPanel - Failed to connect to environment service: CANCELLED: RST_STREAM closed stream. HTTP/2 error code: CANCEL
+2025-04-15 14:19:53.528 [AWT-EventQueue-0] INFO  c.l.gui.EnvironmentPanel - Disconnected from environment service
+2025-04-15 14:20:09.356 [Thread-0] INFO  c.l.discovery.ServiceDiscoveryServer - Shutting down Service Discovery Server
+2025-04-15 14:20:09.359 [Thread-1] INFO  c.l.LondonSmartCityLauncher - Shutting down London Smart City system...
+2025-04-15 14:20:09.364 [Thread-0] INFO  c.l.discovery.ServiceDiscoveryServer - Service Discovery Server stopped
+2025-04-15 14:31:23.911 [main] INFO  c.l.environment.EnvironmentService - Environment Service started on port 50054
+2025-04-15 14:31:24.127 [main] ERROR c.londonsmartcity.common.BaseService - Failed to start Environmental Monitoring Service service: UNAVAILABLE: io exception
+2025-04-15 14:31:24.128 [main] ERROR c.l.environment.EnvironmentService - Failed to start environment service: Service startup failed
